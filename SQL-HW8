@@ -1,0 +1,79 @@
+# HW8
+SQL
+
+1-test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+
+CREATE TABLE employee(
+id INTEGER,
+name VARCHAR(50), 
+birthday DATE,
+email VARCHAR(100)
+);
+
+2-Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+
+insert into MOCK_DATA (id, name, email, birthday) values (1, 'Ellary', 'enarey0@linkedin.com', '2023-01-23');
+insert into MOCK_DATA (id, name, email, birthday) values (2, 'Bo', 'bbordman1@admin.ch', '2022-08-24');
+insert into MOCK_DATA (id, name, email, birthday) values (3, 'Jodie', 'jfelten2@wp.com', '2022-04-01');
+insert into MOCK_DATA (id, name, email, birthday) values (4, 'Robbie', 'rwheatland3@dyndns.org', '2022-10-31');
+insert into MOCK_DATA (id, name, email, birthday) values (5, 'Norean', 'ncansdell4@networkadvertising.org', '2022-09-30');
+insert into MOCK_DATA (id, name, email, birthday) values (6, 'Fitz', 'fainslee5@myspace.com', '2022-12-14');
+insert into MOCK_DATA (id, name, email, birthday) values (7, 'Alexine', 'abaglow6@nih.gov', '2022-06-26');
+insert into MOCK_DATA (id, name, email, birthday) values (8, 'Baxie', 'bcawt7@latimes.com', '2022-05-21');
+insert into MOCK_DATA (id, name, email, birthday) values (9, 'Stepha', 'sclem8@cdbaby.com', '2022-09-01');
+insert into MOCK_DATA (id, name, email, birthday) values (10, 'Lani', 'lberdale9@yahoo.com', '2022-08-07');
+insert into MOCK_DATA (id, name, email, birthday) values (11, 'Garwood', 'gharversona@nymag.com', '2022-10-05');
+insert into MOCK_DATA (id, name, email, birthday) values (12, 'Hillary', 'hlandellsb@google.com.au', '2022-03-11');
+insert into MOCK_DATA (id, name, email, birthday) values (13, 'Christos', 'cmariaultc@biblegateway.com', '2022-04-25');
+insert into MOCK_DATA (id, name, email, birthday) values (14, 'Duncan', 'dleeuwerinkd@harvard.edu', '2022-07-27');
+insert into MOCK_DATA (id, name, email, birthday) values (15, 'Perrine', 'pcliftone@wix.com', '2022-06-06');
+insert into MOCK_DATA (id, name, email, birthday) values (16, 'Helenka', 'hpraundlinf@alibaba.com', '2022-07-08');
+insert into MOCK_DATA (id, name, email, birthday) values (17, 'Carlynn', 'clomondg@technorati.com', '2022-11-04');
+insert into MOCK_DATA (id, name, email, birthday) values (18, 'Joby', 'jlarrowayh@qq.com', '2022-03-14');
+insert into MOCK_DATA (id, name, email, birthday) values (19, 'Arvie', 'agarrettsi@addtoany.com', '2023-01-06');
+insert into MOCK_DATA (id, name, email, birthday) values (20, 'Nichol', 'nyeelesj@paginegialle.it', '2022-11-15');
+insert into MOCK_DATA (id, name, email, birthday) values (21, 'Chris', 'cbringloek@mashable.com', '2022-12-29');
+insert into MOCK_DATA (id, name, email, birthday) values (22, 'Mechelle', 'mpruvostl@discuz.net', '2022-09-21');
+insert into MOCK_DATA (id, name, email, birthday) values (23, 'Helli', 'hsymonsm@netscape.com', '2022-01-30');
+insert into MOCK_DATA (id, name, email, birthday) values (24, 'Marlow', 'mninnottin@indiatimes.com', '2022-02-26');
+insert into MOCK_DATA (id, name, email, birthday) values (25, 'Yolanthe', 'ydanilowiczo@springer.com', '2022-08-08');
+insert into MOCK_DATA (id, name, email, birthday) values (26, 'Devondra', 'dbindleyp@blog.com', '2023-01-12');
+insert into MOCK_DATA (id, name, email, birthday) values (27, 'Coraline', 'cbloxsomq@cbslocal.com', '2022-09-12');
+insert into MOCK_DATA (id, name, email, birthday) values (28, 'Langston', 'lcusher@jimdo.com', '2022-07-09');
+insert into MOCK_DATA (id, name, email, birthday) values (29, 'Rosella', 'rruddiforths@macromedia.com', '2022-05-21');
+insert into MOCK_DATA (id, name, email, birthday) values (30, 'Gerick', 'grisbyt@printfriendly.com', '2022-03-14');
+
+3-Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+
+UPDATE employee
+SET name = 'Ayşegül'
+WHERE name = 'Ellary';
+
+UPDATE employee
+SET email = 'Yolanthedanilowicz@patika.com'
+WHERE id= 25;
+
+UPDATE employee
+SET id = 5
+WHERE id = 55;
+
+UPDATE employee
+SET birthday = '1994-07-04'
+WHERE birthday = '2022-08-07';
+
+4-Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+
+DELETE FROM employee
+WHERE id = 55;
+
+DELETE FROM employee
+WHERE name = 'Langston';
+
+DELETE FROM employee
+WHERE birthday = '2022-05-21';
+
+DELETE FROM employee
+WHERE email = 'grisbyt@printfriendly.com';
+
+DELETE FROM employee
+WHERE name = 'Christos';
